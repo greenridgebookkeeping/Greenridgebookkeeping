@@ -1,0 +1,85 @@
+:root {
+  --green: #164f3a;
+  --cream: #f7f7ef;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--green);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-artwork {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.page-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation overlays keep the artwork itself unchanged. */
+.contact-link,
+.home-link {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border: 1px solid rgba(255,255,255,.75);
+  border-radius: 4px;
+  background: var(--green);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 8px 22px rgba(0,0,0,.16);
+  transition: transform .18s ease, background .18s ease;
+}
+
+.contact-link:hover,
+.home-link:hover {
+  transform: translateY(-2px);
+  background: #0e3d2c;
+}
+
+/* Homepage: place the button in the dark contact section. */
+.contact-link {
+  left: 55%;
+  top: 80.5%;
+  transform: translate(-50%, -50%);
+}
+.contact-link:hover { transform: translate(-50%, calc(-50% - 2px)); }
+
+/* Contact page: small return link near the lower CTA area. */
+.home-link {
+  left: 50%;
+  bottom: 7.5%;
+  transform: translateX(-50%);
+}
+.home-link:hover { transform: translate(-50%, -2px); }
+
+@media (max-width: 700px) {
+  .contact-link,
+  .home-link {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .contact-link, .home-link { transition: none; }
+}
