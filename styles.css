@@ -56,8 +56,8 @@ body {
 
 /* Homepage: place the button in the dark contact section. */
 .contact-link {
-  left: 39%;
-  top: 84%;
+  left: 80%;
+  top: 70%;
   transform: translate(-50%, -50%);
 }
 .contact-link:hover { transform: translate(-50%, calc(-50% - 2px)); }
