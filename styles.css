@@ -79,12 +79,12 @@ body {
   }
   .contact-link {
     left: 50%;
-    top: 90%;
+    top: 99%;
   }
 
   .home-link {
     left: 50%;
-    bottom: 10%;
+    bottom: 1%;
   }
 }
 
