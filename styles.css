@@ -77,6 +77,15 @@ body {
     padding: 0 16px;
     font-size: 13px;
   }
+  .contact-link {
+    left: 50%;
+    top: 90%;
+  }
+
+  .home-link {
+    left: 50%;
+    bottom: 10%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
