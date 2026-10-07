@@ -78,12 +78,12 @@ body {
     font-size: 13px;
   }
   .contact-link {
-    left: 50%;
+    left: 20%;
     top: 99%;
   }
 
   .home-link {
-    left: 50%;
+    left: 20%;
     bottom: 1%;
   }
 }
